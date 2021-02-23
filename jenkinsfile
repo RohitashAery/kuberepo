@@ -1,7 +1,7 @@
 node {
     checkout scm
 
-    docker.withRegistry('https://registery.hub.docker.com', 'dockerHub') {
+    docker.withRegistry('https://hub.docker.com', 'dockerHub') {
 
         def customImage = docker.build("kubeconfigmap/v1")
 
